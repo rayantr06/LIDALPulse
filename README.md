@@ -90,10 +90,6 @@ Le service [`inference/slm_v04_service.py`](inference/slm_v04_service.py) charge
 - [Contrat d'intégration SLM/application](docs/slm_v2/CONTRAT_INTEGRATION_APP_V3_2026-08-17.md)
 - [État de l'implémentation V3 et travaux restants](docs/v3/IMPLEMENTATION_STATUS.md)
 
-## Statut et contribution
+## Statut du projet
 
-Le projet reste un prototype. Les performances du modèle, un service public actif, des clients payants et une utilisation en production ne sont pas revendiqués ici. Les exemples de démonstration ne représentent pas des résultats commerciaux réels.
-
-Le dépôt est hébergé sur le compte de [Rayan](https://github.com/rayantr06). Pour contribuer, décrivez le problème dans une issue et proposez une PR ciblée avec les contrôles adaptés au changement. Utilisez des données synthétiques et gardez les clés, fichiers d'environnement, poids de modèles et consignes personnelles hors du suivi Git.
-
-La documentation technique, les schémas d'annotation et les jeux d'évaluation déjà versionnés restent disponibles. Les instructions d'assistants et plans de travail internes sont conservés localement et ignorés. Le retrait du suivi ne supprime pas les anciennes versions de l'historique Git.
+LIDAL Pulse est en cours de développement. Le dépôt présente l’interface, les outils d’analyse et l’intégration du SLM. La démonstration utilise des données synthétiques ; l’exécution du modèle nécessite un checkpoint configuré séparément.
