@@ -5,7 +5,7 @@ aux aspects individuels, même quand la phrase isolée de l'aspect semble positi
 
 Usage Colab :
     !pip install -q transformers google-genai scikit-learn
-    !python evaluation/test_absa_adapter.py --gemini-key AIzaSyCjk7RJtwbryCdUcbVnFs-BOK9QYnNlgAc
+    !python evaluation/test_absa_adapter.py --gemini-key "$GEMINI_API_KEY"
 """
 
 from __future__ import annotations

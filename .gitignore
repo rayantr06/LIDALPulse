@@ -15,7 +15,11 @@ env/
 
 # Variables d'environnement
 .env
-.env.local
+.env.*
+!.env.example
+!.env.*.example
+!.env.template
+!.env.*.template
 
 # Données
 *.parquet
@@ -36,7 +40,6 @@ models/whisper/
 test-results/
 playwright-report/
 .playwright-cli/
-.impeccable/review/
 
 # Node / Frontend
 frontend/node_modules/
@@ -50,7 +53,6 @@ frontend/.vite/
 .local-runlogs/
 
 # Éditeur / IDE
-.claude/
 .vscode/settings.json
 *.swp
 *.swo
@@ -62,3 +64,53 @@ desktop.ini
 
 # Divers
 *.log
+
+# Instructions et configuration locales des assistants
+.agents/
+.claude/
+.impeccable/
+.superpowers/
+AGENTS.md
+CLAUDE.md
+.mcp.json
+/PROMPTS_MULTI_AGENTS_RAMYPULSE.md
+/docs/agents/
+/docs/superpowers/
+/docs/internal/
+/docs/BRIEF_ET_PROMPT_PRD_POST_WAVE4.md
+/docs/plan_multi_agent_ramypulse.md
+/docs/synthese_croisee.md
+/docs/feuille_de_route_expo.md
+/docs/TODO_BACKEND_MISSING_FIELDS.md
+/docs/baseline_test_results.md
+/docs/frontend_baseline.md
+/docs/protomarket_ii_2026/demo_leticia/06_MESSAGE_A_ENVOYER_A_LETICIA.md
+
+# Fichiers locaux, caches et sorties generees
+.worktrees/
+.ruff_cache/
+.mypy_cache/
+.cache/
+.huggingface/
+.hf_weights/
+.model_cache/
+/runs/
+/checkpoints/
+/output/
+/outputs/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.ckpt
+pytorch_model*.bin
+/lidal-slm*.tar.gz

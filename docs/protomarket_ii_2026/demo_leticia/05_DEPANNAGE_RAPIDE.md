@@ -17,7 +17,7 @@ Vérifiez la connexion internet et que vous êtes sur la bonne branche :
 
 ```powershell
 git status --short --branch
-git switch codex/lidal-pulse-leticia-demo
+git switch main
 powershell -ExecutionPolicy Bypass -File .\scripts\leticia\INSTALLER_DEMO_LETICIA.ps1
 ```
 
@@ -69,13 +69,13 @@ git status --short -- frontend/client/public/brand/lidal-mark-dark.png frontend/
 git restore --source=HEAD -- frontend/client/public/brand/lidal-mark-dark.png frontend/client/public/brand/lidal-mark-transparent.png
 ```
 
-Les deux premières commandes doivent afficher `true`, puis `codex/lidal-pulse-leticia-demo`. La dernière commande remplace uniquement les modifications locales de ces deux assets. Si le dossier n’est pas un checkout Git valide, n’est pas sur cette branche, ou si cette récupération ciblée échoue, conservez le dossier actuel et créez un clone propre à côté :
+Les deux premières commandes doivent afficher `true`, puis `main`. La dernière commande remplace uniquement les modifications locales de ces deux assets. Si le dossier n’est pas un checkout Git valide, n’est pas sur cette branche, ou si cette récupération ciblée échoue, conservez le dossier actuel et créez un clone propre à côté :
 
 ```powershell
 cd ..
-git clone https://github.com/rayantr06/ramypulse.git ramypulse-leticia-propre
-cd ramypulse-leticia-propre
-git switch codex/lidal-pulse-leticia-demo
+git clone https://github.com/rayantr06/LIDALPulse.git ramypulse-leticia-propre
+cd LIDALPulse-leticia-propre
+git switch main
 ```
 
 Exécutez ensuite l’installateur puis le lanceur depuis le checkout récupéré ou le clone propre. N’utilisez pas une image depuis Google Drive ou un CDN pendant le tournage.

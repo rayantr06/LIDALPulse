@@ -14,9 +14,9 @@ Le parcours enregistré est ensuite frontend-only : aucun Python, backend, compt
 Ouvrez PowerShell dans le dossier où vous voulez installer la démo, puis exécutez exactement :
 
 ```powershell
-git clone https://github.com/rayantr06/ramypulse.git
-cd ramypulse
-git switch codex/lidal-pulse-leticia-demo
+git clone https://github.com/rayantr06/LIDALPulse.git
+cd LIDALPulse
+git switch main
 powershell -ExecutionPolicy Bypass -File .\scripts\leticia\INSTALLER_DEMO_LETICIA.ps1
 ```
 
@@ -24,7 +24,7 @@ Le script vérifie la version complète de Node.js, installe les dépendances du
 
 ## Lancer la démo
 
-Depuis la racine `ramypulse` :
+Depuis la racine `LIDALPulse` :
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\leticia\LANCER_DEMO_LETICIA.ps1
