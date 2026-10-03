@@ -3,6 +3,9 @@ dist/
 .env
 .env.*
 !.env.example
+!.env.*.example
+!.env.template
+!.env.*.template
 *.db
 *.log
 playwright-report/

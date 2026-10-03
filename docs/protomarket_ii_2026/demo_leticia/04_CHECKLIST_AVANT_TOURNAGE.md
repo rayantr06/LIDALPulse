@@ -2,7 +2,7 @@
 
 ## Machine et application
 
-- [ ] La branche active est `codex/lidal-pulse-leticia-demo`.
+- [ ] La branche active est `main`.
 - [ ] L’installation s’est terminée sans erreur.
 - [ ] `LANCER_DEMO_LETICIA.ps1` a ouvert `http://127.0.0.1:5173/#/`.
 - [ ] `REINITIALISER_DEMO.ps1` a été exécuté juste avant la prise.
